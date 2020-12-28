@@ -436,6 +436,10 @@ article {
   display: flex;
 }
 
+.signature_serves_wrap article {
+  width: 25%;
+}
+
 #signature-wrap_1 {
   background: url(../img/Grove_Tonic.jpg) no-repeat center;
   background-size: cover;
