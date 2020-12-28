@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -109,7 +110,7 @@ a:active {
 /* header 스타일 */
 
 nav {
-  width: 1743px;
+  width: 100%;
   height: 58px;
   margin: 0 auto;
   display: flex;
@@ -151,15 +152,14 @@ nav {
 .nav-bar__logo img {
   position: absolute;
   top: 80px;
-  left: 875px;
+  left: calc(50% - 72px);
   -webkit-filter: grayscale(1) contrast(100) invert(1);
 }
 
 .hero_wrap {
   width: 100%;
-  height: 166px;
-  padding: 270px 0 0;
-  margin: 0 auto;
+  height: 100%;
+  margin: 270px auto 0;
   text-align: center;
   opacity: 0;
   animation: hero_fade_in 0.5s ease 1.5s forwards;
@@ -181,31 +181,30 @@ nav {
 /* The NOgroni Section */
 
 .nogroni {
-  width: 1863;
-  height: 1115px;
+  width: 100%;
+  height: 100%;
   padding: 80px 20px 60px;
   opacity: 0;
   animation: fadeInup 1s ease 2s forwards;
 }
 
 .section-title {
-  width: 1723px;
+  width: 100%;
   height: 43px;
   margin: 0 auto 30px;
-  box-sizing: border-box;
 }
 
 .nogroni-wrap {
-  width: 1863px;
-  height: 1042px;
+  width: 100%;
+  height: 100%;
   display: flex;
 }
 
 .nogroni_contents-box__large {
-  width: 40%;
+  width: 50%;
   height: 1042px;
   background: url(../img/NOGRONI_BAR_2019.jpg) no-repeat center;
-  background-size: 744px 1042px;
+  background-size: 100% 1042px;
   display: flex;
   align-items: center;
 }
@@ -234,23 +233,23 @@ nav {
 
 .contents-box__btn-large {
   width: 137px;
-  height: 9px;
+  height: 48px;
   border: 1px solid white;
   border-radius: 4px;
   text-align: center;
-  margin: 10px auto 20px;
-  padding: 20px;
+  margin: 0 auto;
   transition: all 0.4s;
 }
 
-.contents-box__btn-large a {
-  width: 137px;
-  height: 48px;
+.nogroni-wrap .contents-box__btn-large a {
   color: white;
+}
+
+.contents-box__btn-large a span {
   font-family: "brown", sans-serif;
   font-size: 11px;
   font-weight: 700;
-  line-height: 9px;
+  line-height: 48px;
   font-style: normal;
   letter-spacing: 3px;
 }
@@ -265,7 +264,7 @@ nav {
 }
 
 .contents-box__small_wrap {
-  width: 60%;
+  width: 50%;
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
@@ -274,7 +273,7 @@ nav {
 }
 
 article {
-  width: 372px;
+  width: 50%;
   height: 520px;
   background: no-repeat center center;
   background-size: cover;
@@ -420,21 +419,20 @@ article {
 /* Signature Serves Section */
 
 .signature {
-  width: 1863px;
-  height: 593px;
+  width: 100%;
+  height: 100%;
   padding: 80px 20px 60px;
 }
 
 .contents-title {
-  width: 1703px;
+  width: 100%;
   height: 43px;
   margin: 0 auto 30px;
-  box-sizing: border-box;
 }
 
 .signature_serves_wrap {
-  width: 1863px;
-  height: 520px;
+  width: 100%;
+  height: 100%;
   display: flex;
 }
 
@@ -520,12 +518,11 @@ article {
 
 .contents-box__small_btn {
   width: 137px;
-  height: 9px;
+  height: 48px;
   border: 1px solid rgb(9, 64, 44);
   border-radius: 4px;
   text-align: center;
-  margin: 10px auto 20px;
-  padding: 20px;
+  margin: 0 auto;
   transition: all 0.4s;
   background-color: white;
 }
@@ -535,13 +532,11 @@ article {
 }
 
 .contents-box__small_btn a {
-  width: 137px;
-  height: 48px;
   color: rgb(235, 235, 232);
   font-family: "brown", sans-serif;
   font-size: 11px;
   font-weight: 700;
-  line-height: 9px;
+  line-height: 48px;
   font-style: normal;
   letter-spacing: 3px;
 }
@@ -559,14 +554,14 @@ article {
 /* Seedlip Range Section */
 
 .Seedlip_range_wrap {
-  width: 1863px;
-  height: 941px;
+  width: 100%;
+  height: 100%;
   padding: 80px 20px 60px;
 }
 
 .Seedlip_range {
-  width: 1863px;
-  height: 868px;
+  width: 100%;
+  height: 100%;
   display: flex;
 }
 
@@ -655,30 +650,28 @@ article {
 /* Grove 42 Section */
 
 .grove {
-  width: 1863;
-  height: 1115px;
+  width: 100%;
+  height: 100%;
   padding: 80px 20px 60px;
 }
 
 .contents-title {
-  width: 1723px;
+  width: 100%;
   height: 43px;
   margin: 0 auto 30px;
-  box-sizing: border-box;
 }
 
 .grove-wrap {
-  width: 1863px;
-  height: 1042px;
+  width: 100%;
+  height: 100%;
   display: flex;
 }
 
 .grove_contents-box__large {
-  width: 40%;
+  width: 50%;
   height: 1042px;
   background: url(../img/SDL_Grove_205.jpg) no-repeat center;
-  background-size: 744px 1042px;
-  display: flex;
+  background-size: 100% 1042px;
   align-items: center;
 }
 
@@ -698,29 +691,6 @@ article {
   margin: 0 0 30px;
 }
 
-.contents-box__btn-large {
-  width: 137px;
-  height: 9px;
-  border: 1px solid white;
-  border-radius: 4px;
-  text-align: center;
-  margin: 10px auto 20px;
-  padding: 20px;
-  transition: all 0.4s;
-}
-
-.contents-box__btn-large a {
-  width: 137px;
-  height: 48px;
-  color: white;
-  font-family: "brown", sans-serif;
-  font-size: 11px;
-  font-weight: 700;
-  line-height: 9px;
-  font-style: normal;
-  letter-spacing: 3px;
-}
-
 .contents-box__btn-large:hover {
   background: white;
 }
@@ -731,13 +701,16 @@ article {
 }
 
 .grove_small_wrap {
-  width: 60%;
+  width: 50%;
   /* height: 520px; */
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
-  box-sizing: border-box;
   align-items: center;
+}
+
+.grove_small_wrap article {
+  width: 50%;
 }
 
 .grove_small_wrap_text {
@@ -776,43 +749,6 @@ article {
   margin: 0 0 130px;
 }
 
-.contents-box__small_btn {
-  width: 137px;
-  height: 9px;
-  border: 1px solid rgb(9, 64, 44);
-  border-radius: 4px;
-  text-align: center;
-  margin: 10px auto 20px;
-  padding: 20px;
-  transition: all 0.4s;
-  background-color: white;
-}
-
-.contents-box__small_btn span {
-  color: rgb(9, 64, 44);
-}
-
-.contents-box__small_btn a {
-  width: 137px;
-  height: 48px;
-  color: rgb(235, 235, 232);
-  font-family: "brown", sans-serif;
-  font-size: 11px;
-  font-weight: 700;
-  line-height: 9px;
-  font-style: normal;
-  letter-spacing: 3px;
-}
-
-.contents-box__small_btn:hover {
-  background: rgb(235, 235, 232);
-}
-
-.contents-box__small_btn:hover a {
-  color: rgb(235, 235, 232);
-  text-decoration: none;
-}
-
 #grove_small_wrap_002 {
   background: url(../img/grove-70cl_350x.png) no-repeat center 30px;
   background-size: 155px 351px;
@@ -821,42 +757,35 @@ article {
 
 #grove_small_wrap_003 {
   background: url(../img/Grove_Tonic.jpg) no-repeat center;
-  background-size: 372px 521px;
+  background-size: cover;
   background-color: rgb(255, 255, 255);
 }
 
 #grove_small_wrap_004 {
   background: url(../img/Grove_CosNOpolitan.jpg) no-repeat center;
-  background-size: 372px 521px;
+  background-size: cover;
   background-color: rgb(255, 255, 255);
 }
 
 /* Beasley: The Home of Seedlip Section */
 
 .beasley {
-  width: 1863;
-  height: 1115px;
+  width: 100%;
+  height: 100%;
   padding: 80px 20px 60px;
 }
 
 .section-title {
-  width: 1723px;
+  width: 100%;
   height: 43px;
   margin: 0 auto 30px;
-  box-sizing: border-box;
-}
-
-.grove-wrap {
-  width: 1863px;
-  height: 1042px;
-  display: flex;
 }
 
 .beasley_grove_contents-box__large {
-  width: 40%;
+  width: 50%;
   height: 1042px;
   background: url(../img/beasleycover.jpg) no-repeat center;
-  background-size: 744px 1042px;
+  background-size: 100% 1042px;
   display: flex;
   align-items: center;
 }
@@ -876,7 +805,7 @@ article {
 }
 
 .beasley_small_wrap {
-  width: 60%;
+  width: 50%;
   height: 1042px;
   display: flex;
   flex-wrap: wrap;
@@ -885,7 +814,6 @@ article {
 }
 
 .beasley_small_box_text_1 {
-  box-sizing: border-box;
   width: 371px;
   height: 520px;
   padding: 375px 0 0 30px;
@@ -895,7 +823,7 @@ article {
 
 #beasley_small_box_001 {
   background: url(../img/1641club_beasley.jpg) no-repeat center;
-  background-size: 371px 520px;
+  background-size: cover;
   box-shadow: inset 0px -200px 30px rgba(16, 16, 16, 0.6);
 }
 
@@ -955,7 +883,7 @@ article {
 
 #beasley_small_box_002 {
   background: url(../img/SEEDLIP_BEASLEYS_24_230__1_.jpg) no-repeat center;
-  background-size: 371px 520px;
+  background-size: cover;
   box-shadow: inset 0px -200px 30px rgba(16, 16, 16, 0.6);
 }
 
@@ -1032,7 +960,7 @@ article {
 
 #beasley_small_box_004 {
   background: url(../img/Chloe.jpg) no-repeat center;
-  background-size: 371px 520px;
+  background-size: cover;
   box-shadow: inset 0px -200px 30px rgba(16, 16, 16, 0.6);
 }
 
@@ -1063,13 +991,13 @@ article {
 /* Discover More Section */
 
 .discover {
-  width: 1905px;
-  height: 580px;
+  width: 100%;
+  height: 100%;
   margin: 80px auto 0;
 }
 
 .discover_wrap {
-  width: 1745px;
+  width: 100%;
   height: 580px;
   padding: 0 80px;
   display: flex;
@@ -1077,13 +1005,13 @@ article {
 
 .discover-title {
   width: 25%;
-  height: 580px;
+  height: 100%;
   background: none;
 }
 
 .discover-contents {
   width: 25%;
-  height: 580px;
+  height: 60%;
   background: none;
 }
 
@@ -1137,76 +1065,47 @@ article {
   transition: all 0.4s;
 }
 
-/* Footer Styles */
+/* Social Section */
 
 .social-wrap {
-  width: 1343px;
-
-  height: 250px;
-
-  box-sizing: border-box;
-
-  display: block;
-
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   color: white;
-
   align-items: center;
+  padding: 0 0 0 25%;
 
-  margin-left: 500px;
-
-  margin-bottom: 60px;
 }
 
 .email-submit {
-  width: 1300px;
-
+  width: 100%;
   font-family: "New Baskerville";
-
   font-style: italic;
-
   font-weight: 400;
-
   font-size: 20px;
 }
 
 .email-submit__input {
-  margin-top: 30px;
-
-  margin-bottom: 60px;
+  margin:30px 0 60px;
 }
 
 .email-submit__input img {
   vertical-align: middle;
-
   width: 41px;
-
   height: 11px;
 }
 
 .email-submit__input-text {
-  width: 1250px;
-
+  width: 60%;
   height: 72px;
-
   font-size: 36px;
-
   font-family: "New Baskerville";
-
   font-style: italic;
-
   font-weight: 400;
-
   color: white;
-
   border: none;
-
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
-
   background: transparent;
-
   -webkit-writing-mode: horizontal-tb;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-border-image: none;
@@ -1233,19 +1132,16 @@ article {
 }
 
 .social-menu__wrap {
-  width: 1280px;
-
+  width: 100%;
   display: flex;
-
   align-items: center;
-
   justify-content: space-between;
 }
 
 .social-menu__sns {
+  width: 20%;
   display: flex;
-
-  justify-content: flex-start;
+  padding: 50px 0 0 ;
 }
 
 .social-menu__sns li {
@@ -1261,18 +1157,16 @@ article {
 }
 
 .social-menu__menu-list {
+  width: 80%;
   display: flex;
+  padding: 0 0 50px;
 
-  justify-content: flex-end;
 }
 
 .social-menu__menu-list li {
   font-size: 10px;
-
   font-weight: 400;
-
-  margin-right: 30px;
-
+  margin: 0 30px 0 0;
   letter-spacing: 2.67px;
 }
 
@@ -1280,21 +1174,25 @@ article {
   color: rgba(255,255,255,0.5);
 }
 
+/* Footer Styles */
+
+footer {
+  width: 100%;
+  height: 100%;
+  margin: 100px 0 0;
+  padding: 0 80px;
+}
+
 .footer-nav__wrap {
-  width: 1280px;
-
+  width: 100%;
   text-align: center;
-
   margin: 0 auto;
-
-  margin-bottom: 50px;
+  margin: 0 0 50px;
 }
 
 .footer-nav__list {
   display: flex;
-
   justify-content: space-evenly;
-
   padding: 0 0 20px;
 }
 
